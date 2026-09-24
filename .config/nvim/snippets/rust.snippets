@@ -1,0 +1,43 @@
+snippet coding
+    //! author: n685
+    //! date: `strftime('%c')`
+
+    use algo_lib::input::UnsafeScanner;
+    use std::io;
+    use std::io::{BufRead, BufWriter, Write};
+
+    fn solve<R: BufRead, W: Write>(scan: &mut UnsafeScanner<R>, out: &mut W) {
+        $0
+    }
+
+    fn main() {
+        let mut scan = UnsafeScanner::new(io::stdin().lock());
+        let mut out = BufWriter::new(io::stdout().lock());
+        solve(&mut scan, &mut out);
+    }
+snippet tcoding
+    //! author: n685
+    //! date: `strftime('%c')`
+
+    use algo_lib::input::UnsafeScanner;
+    use std::io;
+    use std::io::{BufRead, BufWriter, Write};
+
+    fn tc<R: BufRead, W: Write>(scan: &mut UnsafeScanner<R>, out: &mut W, _st: &()) {
+        $0
+    }
+
+    fn solve<R: BufRead, W: Write>(scan: &mut UnsafeScanner<R>, out: &mut W) {
+        let t: usize = scan.token();
+        #[allow(unused_mut)]
+        let mut st = ();
+        for _ in 0..t {
+            tc(scan, out, &st);
+        }
+    }
+
+    fn main() {
+        let mut scan = UnsafeScanner::new(io::stdin().lock());
+        let mut out = BufWriter::new(io::stdout().lock());
+        solve(&mut scan, &mut out);
+    }

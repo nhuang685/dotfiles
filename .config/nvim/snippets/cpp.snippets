@@ -1,0 +1,86 @@
+snippet dxdy
+    constexpr std::array<int, 4> dx{-1, 0, 1, 0}, dy{0, 1, 0, -1};
+snippet fileIO
+    #ifndef LOCAL
+        std::freopen("$FILE$.in", "r", stdin);
+        std::freopen("$FILE$.out", "w", stdout);
+    #endif
+snippet multihash
+    #include "templ/numeric/multihash.h"
+
+    using Hash = multihash::MultiHash<3>;
+    const Hash P = Hash::raw(9967);
+snippet coding
+    /**
+     * @author n685
+     * @date `strftime('%c')`
+     */
+    #include <bits/stdc++.h>
+
+    #ifdef LOCAL
+    #include "dd/debug.h"
+    #else
+    #define dbg(...) 67
+    #define dbg_proj(...) 67
+    #define dbg_rproj(...) 67
+    void nline() {}
+    void bar() {}
+    void start_clock() {}
+    void end_clock() {}
+    #endif
+
+    using u32 = unsigned int;
+    using i64 = long long;
+    using u64 = unsigned long long;
+
+    int main() {
+    #ifndef LOCAL
+        std::ios::sync_with_stdio(false);
+        std::cin.tie(nullptr);
+    #endif
+
+        $0
+    }
+
+snippet tcoding
+    /**
+     * @author n685
+     * @date `strftime('%c')` 
+     */
+    #include <bits/stdc++.h>
+
+    #ifdef LOCAL
+    #include "dd/debug.h"
+    #else
+    #define dbg(...) 67
+    #define dbg_proj(...) 67
+    #define dbg_rproj(...) 67
+    void nline() {}
+    void bar() {}
+    void start_clock() {}
+    void end_clock() {}
+    #endif
+
+    using u32 = unsigned int;
+    using i64 = long long;
+    using u64 = unsigned long long;
+
+    void tc() {
+        $0
+    }
+
+    int main() {
+    #ifndef LOCAL
+        std::ios::sync_with_stdio(false);
+        std::cin.tie(nullptr);
+    #endif
+
+        int t;
+        std::cin >> t;
+        for (int i = 1; i <= t; ++i) {
+            dbg(i);
+            tc();
+            bar();
+        }
+    }
+

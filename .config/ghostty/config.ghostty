@@ -1,0 +1,27 @@
+font-family = "Cascadia Code NF"
+adjust-cell-height = 20%
+font-size = 14
+theme = "Monokai Pro Light"
+# theme = Catppuccin Latte
+background-opacity = 0.90
+# background-opacity-cells = true
+background-blur = macos-glass-regular
+
+# fullscreen = non-native-visible-menu
+macos-non-native-fullscreen = visible-menu
+unfocused-split-opacity = 1
+# alpha-blending = linear-corrected
+window-colorspace = display-p3
+# quit-after-last-window-closed = true
+# window-decoration = none
+macos-titlebar-style = hidden
+# window-padding-x = 8
+# window-padding-y = 4
+
+keybind = global:option+space=toggle_quick_terminal
+working-directory = home
+window-inherit-working-directory = false
+adjust-cursor-thickness = 2
+cursor-style = block
+shell-integration-features = no-cursor
+# cursor-style-blink = false
